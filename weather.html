@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+  <link rel="stylesheet" href="weather.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+  <script src="weather.js" defer></script>
+</head>
+
+
+<body>
+
+  <div class="container">
+    <div id="weather-img"></div>
+    <div class="content">
+    <h1><marquee>Weather Today</marquee></h1>
+    
+    <div class="input-group">
+        <label for="location-input">City:</label>
+        <input type="text" id="location-input" placeholder="Enter city">
+    </div>
+    
+    <div class="input-group">
+        <label for="state-input">State:</label>
+        <input type="text" id="state-input" placeholder="Enter state">
+    </div>
+    
+    <div class="input-group">
+        <label for="country-input">Country:</label>
+        <input type="text" id="country-input" placeholder="Enter country">
+    </div>
+    
+      <button id="check-weather-btn">Search</button>
+      <div id="temp-option">
+        <!-- only one button can be selected, hence radio type, celsius checked by default bc universal-->
+        <input type="radio" id="celsius" name="unit" value="metric" checked>
+        <label for="celsius">°C</label>
+        <input type="radio" id="fahrenheit" name="unit" value="imperial">
+        <label for="fahrenheit">°F</label>
+      </div>
+    
+    <div id="weather-info"></div>
+  </div>
+  <div class="iframe"><iframe src="https://open.spotify.com/embed/track/0GveDUsgYoUwExpWRi6Yx0?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+
+</div>
+</body>
+<br><br><br>
+
+</html>
