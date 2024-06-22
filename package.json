@@ -1,0 +1,14 @@
+{
+  "name": "whatever-da-weather",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",          
+    "build": "vite build"   
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  }
+}
