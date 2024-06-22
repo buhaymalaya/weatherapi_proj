@@ -1,4 +1,6 @@
-const apiKey = '96e04806c69768a73cdbbb70ab50c6d6';
+require('dotenv').config();
+
+const apiKey = process.env.OPENWEATHERMAP_API_KEY;
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const checkWeatherBtn = document.getElementById('check-weather-btn');
