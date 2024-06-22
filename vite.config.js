@@ -8,6 +8,11 @@ export default defineConfig({
     'process.env': process.env
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        app: 'weather.js'  
+      }
+    }
   }
 });
